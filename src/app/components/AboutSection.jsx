@@ -100,27 +100,24 @@ const AboutSection = () => {
           Je suis fermement déterminée à poursuivre mon apprentissage et mon développement afin de fournir des solutions informatiques de qualité supérieure à mes clients et à mon entreprise.
           </p>
           <div className="flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Compétences{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Éducation{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
-            </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange("skills")}
+            active={tab === "skills"}
+          >
+            &nbsp;Compétences&nbsp;
+          </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange("education")}
+            active={tab === "education"}
+          >
+            &nbsp;Éducation&nbsp;
+          </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange("certifications")}
+            active={tab === "certifications"}
+          >
+            &nbsp;Certifications&nbsp;
+          </TabButton>
           </div>
           <div className="mt-8">
           {activeTabData && activeTabData.content}
